@@ -1,0 +1,50 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-11-30T08:22:59.7924304"><meta name="build-number" content="${buildNumber}">       <title>Create Agent Account | API Docs</title><script id="virtual-toc-data" type="application/json">[]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Create Agent Account | API Docs"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="API Docs Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="create-user.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Create Agent Account | API Docs"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "create-user.html#webpage", "url": "create-user.html", "name": "Create Agent Account | API Docs", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "API Docs Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="Create-user" data-main-title="Create Agent Account" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="API-reference.md|API Reference///Agent"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>API Docs  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="Create-user"  id="Create-user.md"  >Create Agent Account</h1>  <div class="api-endpoint"><img alt="POST method" src="https://img.shields.io/badge/-POST-28B8A0" title="POST method"><copier tooltip-text="Copy path: /agent/create_agent"><span>/agent/create_agent</span></copier></div><p id="7a2cc444_10">This is one of the Free Routes.</p><section class="chapter"><h2 id="7a2cc444_11" data-toc="7a2cc444_11">Request parameters</h2><api-block><primary-column><api-param-group id="7a2cc444_13" master-collapse="true" data-chapter-level="2"><script type="application/json">{ "kind": "ApiParamGroup", "header": "Body", 
+"contentType": [ "application/form-data" ],
+"contents": [ 
+{ "name": "application/form-data", "description": "Created user object", "type": "object", "contentsLabel": "Child attributes",  "contents": [ { "name": "firstName", "type": "string" },{ "name": "lastName", "type": "string" },{ "name": "email", "type": "string" },{ "name": "password", "type": "string" },{ "name": "confirmPassword", "type": "string" },{ "name": "phone", "type": "string" },{ "name": "company", "type": "string string" },{ "name": "companyAdd", "type": "string string(company address)" },{ "name": "picture", "type": "string image[png,jpg,jpeg]/pdf" } ]  }
+] }</script></api-param-group></primary-column><secondary-column><div class="tabs" data-tabs-class="api-tabs"><div class="tabs__content" data-title="JSON example" data-sync-tabs="tab-json-example"><div class="code-block" data-title="JSON example" data-lang="json">{
+  &quot;firstName&quot;: &quot;abws&quot;,
+  &quot;email&quot;: &quot;abc11@gmail.com&quot;,
+  &quot;password&quot;: &quot;12345678&quot;,
+  &quot;phone&quot;: &quot;+8801234567&quot;,
+  &quot;lastName&quot;: &quot;d21&quot;,
+  &quot;picture&quot;: &quot;/C:/Users/Fly Far Tech/Pictures/Screenshots/proof.png&quot;,
+  &quot;company&quot;: &quot;abcde&quot;,
+  &quot;companyAdd&quot;: &quot;bd&quot;,
+  &quot;lastName&quot;: &quot;Do&quot;,</div></div></div></secondary-column></api-block></section><section class="chapter"><h2 id="7a2cc444_15" data-toc="7a2cc444_15">Responses</h2><api-block><primary-column><api-param-group id="7a2cc444_16" master-collapse="true" data-chapter-level="3"><script type="application/json">{ "contents" : [ { "kind": "ApiResponse", "statusCode": "default", "name": "successful operation", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "firstName", "type": "string" },{ "name": "lastName", "type": "string" },{ "name": "email", "type": "string" },{ "name": "password", "type": "string" },{ "name": "confirmPassword", "type": "string" },{ "name": "phone", "type": "string" },{ "name": "company", "type": "string string(unique company name)" },{ "name": "companyAdd", "type": "string string(company address unique)" },{ "name": "companyImage", "type": "string image[png,jpg,jpeg]/pdf" },{ "name": "browser", "type": "string string(browser name)" },{ "name": "platform", "type": "string string(windows/linux/mobile)" },{ "name": "approvedBy", "type": "string string 16 bit id oof admin who approve this agent" }
+] } ] }</script></api-param-group></primary-column><secondary-column><div class="tabs" data-tabs-class="api-tabs"><div class="tabs__content" data-sync-tabs="default" data-title="default" data-title-class="api-status-default"><div class="code-block" data-title="JSON example" data-lang="json">
+{
+    &quot;success&quot;: true,
+    &quot;message&quot;: &quot;We are verifying Your Account Please Wait &quot;,
+    &quot;data&quot;: {
+        &quot;id&quot;: &quot;1a4e74e109a749fd95903ee8ccea0158&quot;,
+        &quot;uid&quot;: 11,
+        &quot;agentId&quot;: &quot;QTA1011&quot;,
+        &quot;firstName&quot;: &quot;ab&quot;,
+        &quot;lastName&quot;: &quot;d21&quot;,
+        &quot;email&quot;: &quot;abc333@gmail.com&quot;,
+        &quot;phone&quot;: &quot;+880123456789&quot;,
+        &quot;joinAt&quot;: &quot;2023-10-08T04:16:00.000Z&quot;,
+        &quot;status&quot;: &quot;pending&quot;,
+        &quot;isActive&quot;: 1,
+        &quot;company&quot;: &quot;aaa1&quot;,
+        &quot;companyAdd&quot;: &quot;bd&quot;,
+        &quot;area&quot;: &quot;&quot;,
+        &quot;companyImage&quot;: &quot;http://localhost:5000/public/uploads/Screenshot-2023-08-28-154000.png-1696738560244.webp&quot;,
+        &quot;visaMarkupType&quot;: &quot;&quot;,
+        &quot;visaMarkup&quot;: &quot;&quot;,
+        &quot;markup&quot;: &quot;&quot;,
+        &quot;bonusId&quot;: null,
+        &quot;credit&quot;: null,
+        &quot;creditBy&quot;: null,
+        &quot;loginIp&quot;: &quot;::1&quot;,
+        &quot;browser&quot;: &quot;Other 0.0.0&quot;,
+        &quot;platform&quot;: &quot;Other 0.0.0&quot;,
+        &quot;website&quot;: &quot;&quot;,
+        &quot;approvedBy&quot;: null
+    }
+}
+        </div></div></div></secondary-column></api-block></section><div class="last-modified"> Last modified: 30 November 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="delete-purchase-order-by-id.html">Delete purchase order by ID</a>   <a class="navigation-links__next" href="creates-list-of-users-with-given-input-array.html">Create list of users with given input array</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>

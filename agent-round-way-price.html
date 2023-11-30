@@ -1,0 +1,128 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-11-30T08:22:59.8274624"><meta name="build-number" content="${buildNumber}">       <title>Air Price round Way | API Docs</title><script id="virtual-toc-data" type="application/json">[]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="Air Price round Way | API Docs"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="API Docs Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="agent-round-way-price.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="Air Price round Way | API Docs"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "agent-round-way-price.html#webpage", "url": "agent-round-way-price.html", "name": "Air Price round Way | API Docs", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "API Docs Help" }</script><!-- End Schema.org --> <!-- Mermaid light/dark themes -->  <link rel="stylesheet" type="text/css" href="mermaid.css">  </head>     <body data-id="agent-round-way-price" data-main-title="Air Price round Way" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="API-reference.md|API Reference///Agent Booking"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>API Docs  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="agent-round-way-price"  id="agent-round-way-price.md"  >Air Price round Way</h1>  <div class="api-endpoint"><img alt="POST method" src="https://img.shields.io/badge/-POST-28B8A0" title="POST method"><copier tooltip-text="Copy path: /agent/booking/air-price-roundWay"><span>/agent/booking/air-price-roundWay</span></copier></div><p id="d6eef74c_15">This is a private route for air price a booking.</p><section class="chapter"><h2 id="d6eef74c_16" data-toc="d6eef74c_16">Request parameters</h2><api-block><primary-column><api-param-group id="d6eef74c_18" master-collapse="true" data-chapter-level="2"><script type="application/json">{ "kind": "ApiParamGroup", "header": "Body", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "application/json", "type": "All of priceRequestBase, object", "contentsLabel": "Object variants",  "contents": [ { "name": "object", "type": "object", "contentsLabel": "Child attributes",  "contents": [ { "name": "adultCount", "description": "must be required minimum 1 as number of adult", "required": "true", "type": "number integer" },{ "name": "childCount", "description": "optional, number of adult", "required": "true", "type": "number integer" },{ "name": "infantCount", "description": "optional, number of infant", "required": "true", "type": "number integer" },{ "name": "tripType", "description": "must be 0 for one way 1 for round way and multiCity no idea", "required": "true", "type": "number integer" },{ "name": "systems", "description": "system must be system001 ar something for system name", "type": "string string" } ]  },{ "name": "object", "type": "object", "contentsLabel": "Child attributes",  "contents": [ { "name": "segments", "type": "object", "contentsLabel": "Child attributes",  "contents": [ { "name": "go", "description": "Must contain one object", "required": "true", "type": "array of objects", "contentsLabel": "Child attributes",  "contents": [ { "name": "marketingCareer", "description": "Marketing career code for the flight segment.", "required": "true", "type": "string" },{ "name": "marketingFlight", "description": "Marketing flight code for the flight segment.", "required": "true", "type": "string" },{ "name": "operatingCareer", "description": "Operating career code for the flight segment.", "required": "true", "type": "string" },{ "name": "operatingFlight", "description": "Operating flight code for the flight segment.", "required": "true", "type": "string" },{ "name": "departure", "description": "Departure airport code for the flight segment.", "required": "true", "type": "string" },{ "name": "departureDateTime", "description": "Departure date and time for the flight segment.", "required": "true", "type": "string date-time" },{ "name": "arrival", "description": "Arrival airport code for the flight segment.", "required": "true", "type": "string" },{ "name": "arrivalDateTime", "description": "Arrival date and time for the flight segment.", "required": "true", "type": "string date-time" },{ "name": "bookingCode", "description": "Booking code for the flight segment.", "required": "true", "type": "string" } ]  },{ "name": "back", "description": "Must contain one object", "required": "true", "type": "array of objects", "recursive": "true", "contentsLabel": "Child attributes" } ]  } ]  } ]  }
+] }</script></api-param-group></primary-column><secondary-column><div class="tabs" data-tabs-class="api-tabs"><div class="tabs__content" data-title="JSON example" data-sync-tabs="tab-json-example"><div class="code-block" data-title="JSON example" data-lang="json">{
+  &quot;adultCount&quot;: 1,
+  &quot;childCount&quot;: 0,
+  &quot;infantCount&quot;: 0,
+  &quot;tripType&quot;: 2,
+  &quot;system&quot;: &quot;system001&quot;,
+  &quot;segments&quot;: {
+    &quot;go&quot;: [
+      {
+        &quot;marketingCareer&quot;: &quot;EK&quot;,
+        &quot;marketingFlight&quot;: 587,
+        &quot;operatingCareer&quot;: &quot;QR&quot;,
+        &quot;operatingFlight&quot;: 587,
+        &quot;departure&quot;: &quot;DAC&quot;,
+        &quot;departureDateTime&quot;: &quot;2024-01-04T18:40:00&quot;,
+        &quot;arrival&quot;: &quot;DXB&quot;,
+        &quot;arrivalDateTime&quot;: &quot;2024-01-04T22:10:00&quot;,
+        &quot;bookingCode&quot;: &quot;M&quot;
+      },
+      {
+        &quot;marketingCareer&quot;: &quot;EK&quot;,
+        &quot;marketingFlight&quot;: 203,
+        &quot;operatingCareer&quot;: &quot;EK&quot;,
+        &quot;operatingFlight&quot;: 203,
+        &quot;departure&quot;: &quot;DXB&quot;,
+        &quot;departureDateTime&quot;: &quot;2024-01-05T02:35:00&quot;,
+        &quot;arrival&quot;: &quot;JFK&quot;,
+        &quot;arrivalDateTime&quot;: &quot;2024-01-05T08:15:00&quot;,
+        &quot;bookingCode&quot;: &quot;M&quot;
+      }
+    ],
+    &quot;back&quot;: [
+      {
+        &quot;marketingCareer&quot;: &quot;EK&quot;,
+        &quot;marketingFlight&quot;: 204,
+        &quot;operatingCareer&quot;: &quot;EK&quot;,
+        &quot;operatingFlight&quot;: 204,
+        &quot;departure&quot;: &quot;JFK&quot;,
+        &quot;departureDateTime&quot;: &quot;2024-01-10T10:40:00&quot;,
+        &quot;arrival&quot;: &quot;DXB&quot;,
+        &quot;arrivalDateTime&quot;: &quot;2024-01-11T08:10:00&quot;,
+        &quot;bookingCode&quot;: &quot;L&quot;
+      },
+      {
+        &quot;marketingCareer&quot;: &quot;EK&quot;,
+        &quot;marketingFlight&quot;: 584,
+        &quot;operatingCareer&quot;: &quot;EK&quot;,
+        &quot;operatingFlight&quot;: 584,
+        &quot;departure&quot;: &quot;DXB&quot;,
+        &quot;departureDateTime&quot;: &quot;2024-01-11T16:45:00&quot;,
+        &quot;arrival&quot;: &quot;DAC&quot;,
+        &quot;arrivalDateTime&quot;: &quot;2024-01-11T23:00:00&quot;,
+        &quot;bookingCode&quot;: &quot;L&quot;
+      }
+    ]
+  }
+}</div></div></div></secondary-column></api-block></section><section class="chapter"><h2 id="d6eef74c_20" data-toc="d6eef74c_20">Responses</h2><api-block><primary-column><api-param-group id="d6eef74c_21" master-collapse="true" data-chapter-level="3"><script type="application/json">{ "contents" : [ { "kind": "ApiResponse", "statusCode": "200", "name": "Successful response", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "isRefundable", "description": "Indicates whether the booking is refundable or not.", "type": "boolean" },{ "name": "tripType", "description": "type of trip  i.e oneWay.", "type": "string string" },{ "name": "journeyType", "description": "Type of journey e.g. Outbound.", "type": "string" },{ "name": "commissionType", "description": "Type of commission e.g. sabresotti.", "type": "string" },{ "name": "lastTicketDate", "description": "Last date for ticket issuance e.g. 2023-11-30.", "type": "string date" },{ "name": "validatingCarrier", "description": "The airline code for validating carrier e.g. BS.", "type": "string" },{ "name": "basePrice", "description": "Base price of the booking.", "type": "number" },{ "name": "clientPrice", "description": "Client price of the booking.", "type": "number" },{ "name": "agentPrice", "description": "Agent price of the booking.", "type": "number" },{ "name": "currency", "description": "Currency of the booking e.g. BDT.", "type": "string" },{ "name": "totalTax", "description": "Total tax amount for the booking.", "type": "number" },{ "name": "ait", "description": "Advance Income Tax AIT associated with the booking.", "type": "number" },{ "name": "depCity", "description": "Departure city code e.g. Dubai.", "type": "string" },{ "name": "arrCity", "description": "Arrival city code e.g. Dhaka.", "type": "string" },{ "name": "commission", "description": "Commission amount for the booking.", "type": "number" },{ "name": "fares", "type": "array of objects", "contentsLabel": "Child attributes",  "contents": [ { "name": "paxType", "description": "Passenger type e.g. ADT.", "type": "string" },{ "name": "passengerCount", "description": "Number of passengers for the fare.", "type": "integer" },{ "name": "baseFare", "description": "Base fare for the fare.", "type": "number" },{ "name": "tax", "description": "Tax amount for the fare.", "type": "number" },{ "name": "totalTax", "description": "Total tax amount for the fare.", "type": "number" },{ "name": "totalBaseFareAmount", "description": "Total base fare amount for the fare.", "type": "number" },{ "name": "totalBaseFareAmountWithTax", "description": "Total base fare amount with tax for the fare.", "type": "number" },{ "name": "currency", "description": "Currency of the fare e.g. BDT.", "type": "string" },{ "name": "clientPrice", "description": "Client price for the fare.", "type": "number" },{ "name": "totalClientPrice", "description": "Total client price for the fare.", "type": "number" },{ "name": "serviceFee", "description": "Service fee for the fare.", "type": "number" },{ "name": "discount", "description": "Discount amount for the fare.", "type": "number" },{ "name": "bag", "description": "Baggage information for the fare e.g. 0 KG.", "type": "string" } ]  },{ "name": "travelTime", "description": "Date and time of travel e.g. 2023-12-20T21:45:00.", "type": "string date-time" }
+] }, { "kind": "ApiResponse", "statusCode": "400", "name": "Bad Request", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "success", "description": "Indicates whether the request was successful or not and it always false here.", "type": "boolean" },{ "name": "error", "description": "Error message indicating the reason for the failure.", "type": "string" }
+] }, { "kind": "ApiResponse", "statusCode": "401", "name": "Unauthorized", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "success", "description": "Indicates whether the request was successful or not and it always false here.", "type": "boolean" },{ "name": "error", "description": "Error message indicating the reason for the failure.", "type": "string" }
+] }, { "kind": "ApiResponse", "statusCode": "403", "name": "Forbidden", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "code", "type": "integer int32" },{ "name": "details", "type": "array of objects", "contentsLabel": "Child attributes",  "contents": [ { "name": "typeUrl", "type": "string" },{ "name": "value", "type": "string" } ]  },{ "name": "message", "type": "string" }
+] }, { "kind": "ApiResponse", "statusCode": "404", "name": "Bad Request", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "success", "description": "Indicates whether the request was successful or not and it always false here.", "type": "boolean" },{ "name": "error", "description": "Error message indicating the reason for the failure.", "type": "string" }
+] }, { "kind": "ApiResponse", "statusCode": "500", "name": "Internal Server Error", 
+"contentType": [ "application/json" ],
+"contents": [ 
+{ "name": "code", "type": "integer int32" },{ "name": "details", "type": "array of objects", "contentsLabel": "Child attributes",  "contents": [ { "name": "typeUrl", "type": "string" },{ "name": "value", "type": "string" } ]  },{ "name": "message", "type": "string" }
+] } ] }</script></api-param-group></primary-column><secondary-column><div class="tabs" data-tabs-class="api-tabs"><div class="tabs__content" data-sync-tabs="200" data-title="200" data-title-class="api-status-success"><div class="code-block" data-title="JSON example" data-lang="json">[
+  {
+    &quot;segmentType&quot;: &quot;oneWay&quot;,
+    &quot;tripType&quot;: &quot;oneWay&quot;,
+    &quot;journeyType&quot;: &quot;Outbound&quot;,
+    &quot;isRefundable&quot;: true,
+    &quot;commissionType&quot;: &quot;sabresotti&quot;,
+    &quot;lastTicketDate&quot;: &quot;2023-11-30&quot;,
+    &quot;validatingCarrier&quot;: &quot;BS&quot;,
+    &quot;basePrice&quot;: 18958,
+    &quot;clientPrice&quot;: 22571,
+    &quot;agentPrice&quot;: 20345,
+    &quot;currency&quot;: &quot;BDT&quot;,
+    &quot;totalTax&quot;: 3613,
+    &quot;ait&quot;: 0.003,
+    &quot;depCity&quot;: &quot;Dubai&quot;,
+    &quot;arrCity&quot;: &quot;Dhaka&quot;,
+    &quot;commission&quot;: 12.1,
+    &quot;fares&quot;: [
+      {
+        &quot;paxType&quot;: &quot;ADT&quot;,
+        &quot;passengerCount&quot;: 1,
+        &quot;baseFare&quot;: 18958,
+        &quot;tax&quot;: 3613,
+        &quot;totalTax&quot;: 3613,
+        &quot;totalBaseFareAmount&quot;: 18958,
+        &quot;totalBaseFareAmountWithTax&quot;: 22571,
+        &quot;currency&quot;: &quot;BDT&quot;,
+        &quot;clientPrice&quot;: 22571,
+        &quot;totalClientPrice&quot;: 22571,
+        &quot;serviceFee&quot;: 0,
+        &quot;discount&quot;: 0,
+        &quot;bag&quot;: &quot;0 KG&quot;
+      }
+    ],
+    &quot;travelTime&quot;: &quot;2023-12-20T21:45:00&quot;
+  }
+]</div></div><div class="tabs__content" data-sync-tabs="401" data-title="401" data-title-class="api-status-error"><div class="code-block" data-title="JSON example" data-lang="json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: &quot;No authorization token was found&quot;
+}</div></div><div class="tabs__content" data-sync-tabs="404" data-title="404" data-title-class="api-status-error"><div class="code-block" data-title="JSON example" data-lang="json">{
+  &quot;success&quot;: false,
+  &quot;error&quot;: &quot;No fights found&quot;
+}</div></div></div></secondary-column></api-block></section><div class="last-modified"> Last modified: 30 November 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="agent-one-way-price.html">Air Price one Way</a>   <a class="navigation-links__next" href="agent-booking-cancle.html">Air Cancel</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.1.5-b176/app.js"></script></body></html>
