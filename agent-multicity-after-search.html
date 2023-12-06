@@ -1,0 +1,230 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat"><html lang="en-US" data-colors-preset="contrast" data-primary-color="#307FFF"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta name="robots" content="noindex">  <meta name="built-on" content="2023-12-06T11:57:13.2268347"><meta name="build-number" content="${buildNumber}">       <title>multiCity After Search | API Docs</title><script id="virtual-toc-data" type="application/json">[]</script><script id="topic-shortcuts" type="application/json"></script><link href="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.css" rel="stylesheet">   <link rel="apple-touch-icon" sizes="180x180" href="https://jetbrains.com/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="https://jetbrains.com/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="https://jetbrains.com/favicon-16x16.png"><link rel="manifest" href="https://jetbrains.com/site.webmanifest"><link rel="mask-icon" href="https://jetbrains.com/safari-pinned-tab.svg" color="#000000"><meta name="msapplication-TileColor" content="#000000"/><meta name="msapplication-TileImage" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-144x144.png"/><meta name="msapplication-square70x70logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-70x70.png"/><meta name="msapplication-square150x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-150x150.png"/><meta name="msapplication-wide310x150logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x150.png"/><meta name="msapplication-square310x310logo" content="https://resources.jetbrains.com/storage/ui/favicons/mstile-310x310.png"/>  <meta name="image" content=""><!-- Open Graph --><meta property="og:title" content="multiCity After Search | API Docs"/><meta property="og:description" content=""/><meta property="og:image" content=""/><meta property="og:site_name" content="API Docs Help"/><meta property="og:type" content="website"/><meta property="og:locale" content="en_US"/><meta property="og:url" content="agent-multicity-after-search.html"/><!-- End Open Graph --><!-- Twitter Card --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:title" content="multiCity After Search | API Docs"><meta name="twitter:description" content=""><meta name="twitter:creator" content=""><meta name="twitter:image:src" content=""><!-- End Twitter Card --><!-- Schema.org WebPage --><script type="application/ld+json"> { "@context": "http://schema.org", "@type": "WebPage", "@id": "agent-multicity-after-search.html#webpage", "url": "agent-multicity-after-search.html", "name": "multiCity After Search | API Docs", "description": "", "image": "", "inLanguage":"en-US" }</script><!-- End Schema.org --><!-- Schema.org WebSite --><script type="application/ld+json"> { "@type": "WebSite", "@id": "/#website", "url": "/", "name": "API Docs Help" }</script><!-- End Schema.org --></head>      <body data-id="agent-multicity-after-search" data-main-title="multiCity After Search" data-article-props="{&quot;seeAlsoStyle&quot;:&quot;links&quot;}"  data-template="article"  data-breadcrumbs="API-reference.md|API Reference///Agent Booking"  >   <div class="wrapper"><main class="panel _main"><header class="panel__header"><div class="container"><h3>API Docs  Help</h3><div class="panel-trigger"></div></div></header><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="inactive"><h1 data-toc="agent-multicity-after-search"   id="agent-multicity-after-search.md">multiCity After Search</h1>  <div class="api-endpoint"><img alt="GET method" src="https://img.shields.io/badge/-GET-167DFF" title="GET method"><copier tooltip-text="Copy path: /api_agent/booking/search-multiCity"><span>/api_agent/booking/search-multiCity</span></copier></div><p id="177c5a59_480">This is a private route .</p><section class="chapter"><h2 id="177c5a59_481" data-toc="177c5a59_481"   >Request parameters</h2><api-block data-chapter-level="2"><primary-column><api-param-group id="177c5a59_483" master-collapse="true" data-chapter-level="2"><script type="application/json">{"contentType":["application/json"],"header":"Body","contents":[{"id":"api_doc_10","name":"application/json","typeName":"MultiCityAfterSearchRequestBody","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"type","description":"The type of the search (e.g., multicity).","required":"true","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_2","name":"adultCount","description":"The number of adult passengers.","required":"true","typeName":"integer","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_3","name":"childCount","description":"The number of child passengers.","typeName":"integer","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_4","name":"infantCount","description":"The number of infant passengers.","typeName":"integer","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_5","name":"cabin","description":"The cabin class (e.g., Business).","required":"true","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_9","name":"segmentsList","required":"true","typeName":"Array of MultiCitySegment","typeKind":"ARRAY","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_6","name":"departure","description":"The departure airport code.","required":"true","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_7","name":"arrival","description":"The arrival airport code.","required":"true","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_8","name":"departureDate","description":"The departure date.","required":"true","typeName":"string date","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}]}],"kind":"ApiParamGroup"}</script></api-param-group></primary-column><secondary-column><div class="tabs" data-tabs-class="api-tabs"><div class="tabs__content" data-title="JSON example" data-sync-tabs="tab-json-example"><div class="code-block" data-title="JSON example" data-lang="json">
+           {
+  &quot;type&quot;: &quot;multicity&quot;,
+  &quot;adultCount&quot;: 1,
+  &quot;childCount&quot;: 0,
+  &quot;infantCount&quot;: 0,
+   &quot;cabin&quot;:&quot;Business&quot;,
+  &quot;segmentsList&quot;: [
+    {
+      &quot;departure&quot;: &quot;DAC&quot;,
+      &quot;arrival&quot;: &quot;JED&quot;,
+      &quot;departureDate&quot;: &quot;2024-02-03&quot;
+    },
+    {
+      &quot;departure&quot;: &quot;DXB&quot;,
+      &quot;arrival&quot;: &quot;MED&quot;,
+      &quot;departureDate&quot;: &quot;2024-02-15&quot;
+    },
+    {
+      &quot;departure&quot;: &quot;BKK&quot;,
+      &quot;arrival&quot;: &quot;SIN&quot;,
+      &quot;departureDate&quot;: &quot;2024-03-01&quot;
+    }
+  ]
+}
+</div></div></div></secondary-column></api-block></section><section class="chapter"><h2 id="177c5a59_485" data-toc="177c5a59_485"   >Responses</h2><api-block data-chapter-level="2"><primary-column><api-param-group id="177c5a59_486" master-collapse="true" data-chapter-level="3"><script type="application/json">{ "contents" : [{"statusCode":"200","statusType":"OK","name":"Successful response","description":"Successful response","contentType":["application/json"],"contents":[{"id":"api_doc_41","name":"application/json","typeName":"FlightLeg","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"departureDate","description":"Departure date.","typeName":"string date","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_2","name":"departure","description":"Departure airport code.","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_3","name":"arrival","description":"Arrival airport code.","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_4","name":"legIndex","description":"Leg index.","typeName":"integer","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_5","name":"flightIndex","description":"Flight index.","typeName":"integer","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_37","name":"segments","typeName":"Array of AfterSearchSegment","typeKind":"ARRAY","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_6","name":"aircraft","description":"Aircraft type","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_7","name":"marketingCarrier","description":"Marketing carrier code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_8","name":"marketingCarrierName","description":"Marketing carrier name","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_9","name":"marketingFlight","description":"Marketing flight number","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_10","name":"operatingCarrier","description":"Operating carrier code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_11","name":"operatingCarrierName","description":"Operating carrier name","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_12","name":"operatingFlight","description":"Operating flight number","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_13","name":"departure","description":"Departure airport code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_14","name":"departureAirport","description":"Departure airport name","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_15","name":"departureLocation","description":"Departure location","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_16","name":"departureCity","description":"Departure city","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_17","name":"departureCountryCode","description":"Departure country code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_18","name":"departureCountryName","description":"Departure country name","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_19","name":"departureDate","description":"Departure date","typeName":"string date","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_20","name":"departureTime","description":"Departure time","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_21","name":"departureDateTime","description":"Departure date and time","typeName":"string date-time","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_22","name":"arrival","description":"Arrival airport code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_23","name":"arrivalAirport","description":"Arrival airport name","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_24","name":"arrivalLocation","description":"Arrival location","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_25","name":"arrivalCity","description":"Arrival city","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_26","name":"arrivalCountryCode","description":"Arrival country code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_27","name":"arrivalCountryName","description":"Arrival country name","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_28","name":"arrivalDate","description":"Arrival date","typeName":"string date","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_29","name":"arrivalDateTime","description":"Arrival date and time","typeName":"string date-time","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_30","name":"arrivalTime","description":"Arrival time","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_31","name":"flightDuration","description":"Flight duration","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_32","name":"bookingClass","description":"Booking class code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_33","name":"cabinCode","description":"Cabin code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_34","name":"mealCode","description":"Meal code","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_35","name":"seatAvailable","description":"Number of available seats","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_36","name":"baggage","description":"Allowed baggage limit","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]},{"id":"api_doc_39","name":"transit","typeName":"object","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_38","name":"Transit","description":"Transit information","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]},{"id":"api_doc_40","name":"isRefundable","description":"about refund policy","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}],"kind":"ApiResponse"}, {"statusCode":"400","statusType":"ERROR","name":"Bad Request","description":"Bad Request","contentType":["application/json"],"contents":[{"id":"api_doc_3","name":"application/json","typeName":"TokenNotFound","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"success","description":"Always false.","typeName":"boolean","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_2","name":"error","description":"Error message indicating the reason for the failure.","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}],"kind":"ApiResponse"}, {"statusCode":"401","statusType":"ERROR","name":"Unauthorized","description":"Unauthorized","contentType":["application/json"],"contents":[{"id":"api_doc_3","name":"application/json","typeName":"TokenNotFound","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"success","description":"Always false.","typeName":"boolean","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_2","name":"error","description":"Error message indicating the reason for the failure.","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}],"kind":"ApiResponse"}, {"statusCode":"403","statusType":"ERROR","name":"Forbidden","description":"Forbidden","contentType":["application/json"],"contents":[{"id":"api_doc_6","name":"application/json","typeName":"ErrorResponse","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"code","typeName":"integer int32","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_4","name":"details","typeName":"Array of object","typeKind":"ARRAY","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_2","name":"typeUrl","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_3","name":"value","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]},{"id":"api_doc_5","name":"message","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}],"kind":"ApiResponse"}, {"statusCode":"404","statusType":"ERROR","name":"Bad Request","description":"Bad Request","contentType":["application/json"],"contents":[{"id":"api_doc_3","name":"application/json","typeName":"TokenNotFound","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"success","description":"Always false.","typeName":"boolean","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_2","name":"error","description":"Error message indicating the reason for the failure.","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}],"kind":"ApiResponse"}, {"statusCode":"500","statusType":"ERROR","name":"Internal Server Error","description":"Internal Server Error","contentType":["application/json"],"contents":[{"id":"api_doc_6","name":"application/json","typeName":"ErrorResponse","typeKind":"OBJECT","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_1","name":"code","typeName":"integer int32","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_4","name":"details","typeName":"Array of object","typeKind":"ARRAY","recursive":false,"contentsLabel":"Child attributes","contents":[{"id":"api_doc_2","name":"typeUrl","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"},{"id":"api_doc_3","name":"value","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]},{"id":"api_doc_5","name":"message","typeName":"string","typeKind":"PRIMITIVE","contentsLabel":"Child attributes"}]}],"kind":"ApiResponse"}] }</script></api-param-group></primary-column><secondary-column><div class="tabs" data-tabs-class="api-tabs"><div class="tabs__content" data-sync-tabs="200" data-title="200" data-title-class="api-status-success"><div class="code-block" data-title="JSON example" data-lang="json">
+       {
+        &quot;uId&quot;: &quot;60581b3ddf3449c8af44a2eab0c39926&quot;,
+        &quot;system&quot;: &quot;system001&quot;,
+        &quot;carrier&quot;: &quot;BG&quot;,
+        &quot;carrierName&quot;: &quot;Biman Bangladesh Airlines&quot;,
+        &quot;segment&quot;: 2,
+        &quot;baseFare&quot;: 487305,
+        &quot;class&quot;: &quot;Business&quot;,
+        &quot;taxes&quot;: 49674,
+        &quot;commissionType&quot;: &quot;sitti&quot;,
+        &quot;agentPrice&quot;: 484986,
+        &quot;clientPrice&quot;: 536979,
+        &quot;commission&quot;: 51993,
+        &quot;commissionValue&quot;: 11,
+        &quot;availableSeat&quot;: &quot;9&quot;,
+        &quot;priceBreakdown&quot;: [
+            {
+                &quot;paxType&quot;: &quot;ADT&quot;,
+                &quot;paxCount&quot;: 1,
+                &quot;baseFare&quot;: 487305,
+                &quot;totalBaseFare&quot;: 487305,
+                &quot;tax&quot;: 49674,
+                &quot;totalTaxAmount&quot;: 49674,
+                &quot;totalAmount&quot;: 536979,
+                &quot;discount&quot;: 0,
+                &quot;otherCharges&quot;: 0,
+                &quot;serviceFee&quot;: 0
+            }
+        ],
+        &quot;cityCount&quot;: [
+            {
+                &quot;departureDate&quot;: &quot;2024-02-03&quot;,
+                &quot;departure&quot;: &quot;DAC&quot;,
+                &quot;arrival&quot;: &quot;JED&quot;,
+                &quot;legIndex&quot;: 1,
+                &quot;flightIndex&quot;: 1,
+                &quot;segments&quot;: [
+                    {
+                        &quot;aircraft&quot;: &quot;BOEING 777-300&quot;,
+                        &quot;marketingCarrier&quot;: &quot;BG&quot;,
+                        &quot;marketingCarrierName&quot;: &quot;Biman Bangladesh Airlines&quot;,
+                        &quot;marketingFlightNumber&quot;: 335,
+                        &quot;operatingCarrier&quot;: &quot;BG&quot;,
+                        &quot;operatingFlightNumber&quot;: 335,
+                        &quot;operatingCarrierName&quot;: &quot;Biman Bangladesh Airlines&quot;,
+                        &quot;departureCity&quot;: &quot;Dhaka&quot;,
+                        &quot;departureCountryCode&quot;: &quot;BD&quot;,
+                        &quot;departureCountryName&quot;: &quot;BANGLADESH&quot;,
+                        &quot;departure&quot;: &quot;DAC&quot;,
+                        &quot;departureAirPort&quot;: &quot;Hazrat Shahjalal Intl Airport&quot;,
+                        &quot;departureLocation&quot;: &quot;Dhaka,Bangladesh&quot;,
+                        &quot;departureDate&quot;: &quot;2024-02-03&quot;,
+                        &quot;departureDateTime&quot;: &quot;2024-02-03T16:45:00&quot;,
+                        &quot;departureTime&quot;: &quot;16:45:00&quot;,
+                        &quot;arrivalCity&quot;: &quot;Jeddah&quot;,
+                        &quot;arrivalCountryCode&quot;: &quot;SA&quot;,
+                        &quot;arrivalCountryName&quot;: &quot;SAUDI ARABIA&quot;,
+                        &quot;arrival&quot;: &quot;JED&quot;,
+                        &quot;arrivalAirPort&quot;: &quot;Jeddah Intl &quot;,
+                        &quot;arrivalLocation&quot;: &quot;Jeddah,SAUDI ARABIA&quot;,
+                        &quot;arrivalDate&quot;: &quot;2024-02-03&quot;,
+                        &quot;arrivalDateTime&quot;: &quot;2024-02-03T21:25:00&quot;,
+                        &quot;arrivalTime&quot;: &quot;21:25:00&quot;,
+                        &quot;baggage&quot;: &quot;40 KG&quot;,
+                        &quot;bookingClass&quot;: &quot;J&quot;,
+                        &quot;cabinCode&quot;: &quot;C&quot;,
+                        &quot;mealCode&quot;: &quot;M&quot;,
+                        &quot;stopCount&quot;: 0,
+                        &quot;flightDuration&quot;: &quot;7H 40Min&quot;
+                    }
+                ]
+            },
+            {
+                &quot;departureDate&quot;: &quot;2024-02-15&quot;,
+                &quot;departure&quot;: &quot;DXB&quot;,
+                &quot;arrival&quot;: &quot;MED&quot;,
+                &quot;legIndex&quot;: 2,
+                &quot;flightIndex&quot;: 1,
+                &quot;segments&quot;: [
+                    {
+                        &quot;aircraft&quot;: &quot;AIRBUS A320NEO&quot;,
+                        &quot;marketingCarrier&quot;: &quot;MS&quot;,
+                        &quot;marketingCarrierName&quot;: &quot;EgyptAir&quot;,
+                        &quot;marketingFlightNumber&quot;: 906,
+                        &quot;operatingCarrier&quot;: &quot;MS&quot;,
+                        &quot;operatingFlightNumber&quot;: 906,
+                        &quot;operatingCarrierName&quot;: &quot;EgyptAir&quot;,
+                        &quot;departureCity&quot;: &quot;Dubai&quot;,
+                        &quot;departureCountryCode&quot;: &quot;AE&quot;,
+                        &quot;departureCountryName&quot;: &quot;UNITED ARAB EMIRATES&quot;,
+                        &quot;departure&quot;: &quot;DXB&quot;,
+                        &quot;departureAirPort&quot;: &quot;Dubai Intl Airport&quot;,
+                        &quot;departureLocation&quot;: &quot;Dubai,UNITED ARAB EMIRATES&quot;,
+                        &quot;departureDate&quot;: &quot;2024-02-15&quot;,
+                        &quot;departureDateTime&quot;: &quot;2024-02-15T19:00:00&quot;,
+                        &quot;departureTime&quot;: &quot;19:00:00&quot;,
+                        &quot;arrivalCity&quot;: &quot;Cairo&quot;,
+                        &quot;arrivalCountryCode&quot;: &quot;EG&quot;,
+                        &quot;arrivalCountryName&quot;: &quot;EGYPT&quot;,
+                        &quot;arrival&quot;: &quot;CAI&quot;,
+                        &quot;arrivalAirPort&quot;: &quot;Cairo Intl Airport&quot;,
+                        &quot;arrivalLocation&quot;: &quot;Cairo,EGYPT&quot;,
+                        &quot;arrivalDate&quot;: &quot;2024-02-15&quot;,
+                        &quot;arrivalDateTime&quot;: &quot;2024-02-15T21:00:00&quot;,
+                        &quot;arrivalTime&quot;: &quot;21:00:00&quot;,
+                        &quot;baggage&quot;: &quot;40 KG&quot;,
+                        &quot;bookingClass&quot;: &quot;J&quot;,
+                        &quot;cabinCode&quot;: &quot;C&quot;,
+                        &quot;mealCode&quot;: &quot;M&quot;,
+                        &quot;stopCount&quot;: 0,
+                        &quot;flightDuration&quot;: &quot;4H 0Min&quot;
+                    },
+                    {
+                        &quot;aircraft&quot;: &quot;AIRBUS&quot;,
+                        &quot;marketingCarrier&quot;: &quot;MS&quot;,
+                        &quot;marketingCarrierName&quot;: &quot;EgyptAir&quot;,
+                        &quot;marketingFlightNumber&quot;: 675,
+                        &quot;operatingCarrier&quot;: &quot;MS&quot;,
+                        &quot;operatingFlightNumber&quot;: 675,
+                        &quot;operatingCarrierName&quot;: &quot;EgyptAir&quot;,
+                        &quot;departureCity&quot;: &quot;Cairo&quot;,
+                        &quot;departureCountryCode&quot;: &quot;EG&quot;,
+                        &quot;departureCountryName&quot;: &quot;EGYPT&quot;,
+                        &quot;departure&quot;: &quot;CAI&quot;,
+                        &quot;departureAirPort&quot;: &quot;Cairo Intl Airport&quot;,
+                        &quot;departureLocation&quot;: &quot;Cairo,EGYPT&quot;,
+                        &quot;departureDate&quot;: &quot;2024-02-15&quot;,
+                        &quot;departureDateTime&quot;: &quot;2024-02-15T22:40:00&quot;,
+                        &quot;departureTime&quot;: &quot;22:40:00&quot;,
+                        &quot;arrivalCity&quot;: &quot;Madinah&quot;,
+                        &quot;arrivalCountryCode&quot;: &quot;SA&quot;,
+                        &quot;arrivalCountryName&quot;: &quot;SAUDI ARABIA&quot;,
+                        &quot;arrival&quot;: &quot;MED&quot;,
+                        &quot;arrivalAirPort&quot;: &quot;Prince Mohammad Bin Abdulaziz Intl Airport&quot;,
+                        &quot;arrivalLocation&quot;: &quot;Madinah,SAUDI ARABIA&quot;,
+                        &quot;arrivalDate&quot;: &quot;2000-01-02&quot;,
+                        &quot;arrivalDateTime&quot;: &quot;2024-02-16T01:20:00&quot;,
+                        &quot;arrivalTime&quot;: &quot;01:20:00&quot;,
+                        &quot;baggage&quot;: &quot;40 KG&quot;,
+                        &quot;bookingClass&quot;: &quot;J&quot;,
+                        &quot;cabinCode&quot;: &quot;C&quot;,
+                        &quot;mealCode&quot;: &quot;M&quot;,
+                        &quot;stopCount&quot;: 0,
+                        &quot;flightDuration&quot;: &quot;1H 40Min&quot;
+                    }
+                ],
+                &quot;transit&quot;: {
+                    &quot;Transit&quot;: &quot;1 hours 40 minutes&quot;
+                }
+            },
+            {
+                &quot;departureDate&quot;: &quot;2024-03-01&quot;,
+                &quot;departure&quot;: &quot;BKK&quot;,
+                &quot;arrival&quot;: &quot;SIN&quot;,
+                &quot;legIndex&quot;: 3,
+                &quot;flightIndex&quot;: 1,
+                &quot;segments&quot;: [
+                    {
+                        &quot;aircraft&quot;: &quot;AIRBUS A359&quot;,
+                        &quot;marketingCarrier&quot;: &quot;TG&quot;,
+                        &quot;marketingCarrierName&quot;: &quot;Thai Airways&quot;,
+                        &quot;marketingFlightNumber&quot;: 403,
+                        &quot;operatingCarrier&quot;: &quot;TG&quot;,
+                        &quot;operatingFlightNumber&quot;: 403,
+                        &quot;operatingCarrierName&quot;: &quot;Thai Airways&quot;,
+                        &quot;departureCity&quot;: &quot;Bangkok&quot;,
+                        &quot;departureCountryCode&quot;: &quot;TH&quot;,
+                        &quot;departureCountryName&quot;: &quot;THAILAND&quot;,
+                        &quot;departure&quot;: &quot;BKK&quot;,
+                        &quot;departureAirPort&quot;: &quot;Suvarnabhumi Intl Airport&quot;,
+                        &quot;departureLocation&quot;: &quot;Bangkok,THAILAND&quot;,
+                        &quot;departureDate&quot;: &quot;2024-03-01&quot;,
+                        &quot;departureDateTime&quot;: &quot;2024-03-01T08:00:00&quot;,
+                        &quot;departureTime&quot;: &quot;08:00:00&quot;,
+                        &quot;arrivalCity&quot;: &quot;Singapore&quot;,
+                        &quot;arrivalCountryCode&quot;: &quot;SG&quot;,
+                        &quot;arrivalCountryName&quot;: &quot;SINGAPORE&quot;,
+                        &quot;arrival&quot;: &quot;SIN&quot;,
+                        &quot;arrivalAirPort&quot;: &quot;Changi Intl Airport&quot;,
+                        &quot;arrivalLocation&quot;: &quot;Singapore,SINGAPORE&quot;,
+                        &quot;arrivalDate&quot;: &quot;2024-03-01&quot;,
+                        &quot;arrivalDateTime&quot;: &quot;2024-03-01T11:15:00&quot;,
+                        &quot;arrivalTime&quot;: &quot;11:15:00&quot;,
+                        &quot;baggage&quot;: &quot;40 KG&quot;,
+                        &quot;bookingClass&quot;: &quot;J&quot;,
+                        &quot;cabinCode&quot;: &quot;C&quot;,
+                        &quot;mealCode&quot;: &quot;M&quot;,
+                        &quot;stopCount&quot;: 0,
+                        &quot;flightDuration&quot;: &quot;2H 15Min&quot;
+                    }
+                ]
+            }
+        ],
+        &quot;isRefundable&quot;: &quot;Refundable&quot;
+    }
+</div></div><div class="tabs__content" data-sync-tabs="400" data-title="400" data-title-class="api-status-error"><div class="code-block" data-title="JSON example" data-lang="json">
+           {
+ {
+    &quot;success&quot;: false,
+    &quot;error&quot;: &quot;Json Web Token is invalid, Try again&quot;
+}
+</div></div><div class="tabs__content" data-sync-tabs="404" data-title="404" data-title-class="api-status-error"><div class="code-block" data-title="JSON example" data-lang="json">
+         []
+</div></div></div></secondary-column></api-block></section><div class="last-modified"> Last modified: 06 December 2023</div><div data-feedback-placeholder="true"></div><div class="navigation-links _bottom">  <a class="navigation-links__prev" href="agent-round-way-after-search.html">round Way After Search</a>   <a class="navigation-links__next" href="agent-one-way-price.html">Air Price one Way</a>  </div></article><div id="disqus_thread"></div></div></section></main></div>  <script src="https://resources.jetbrains.com/writerside/apidoc/6.6.6-b205/app.js"></script></body></html>
